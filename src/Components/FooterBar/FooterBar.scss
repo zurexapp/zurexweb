@@ -1,0 +1,104 @@
+@import "../../Colors.scss";
+.wholeSection2 {
+  padding-top: 2rem;
+  min-height: 50vh;
+  height: max-content;
+  background: $maincolor;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.footerContctUsItem {
+  width: 100%;
+  @include justifyStart;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-bottom: 10px;
+  img {
+    height: 2.188rem;
+    object-fit: contain;
+  }
+  span {
+    margin-left: 10px;
+    color: $whitecolor;
+    font-size: 1.2rem;
+  }
+}
+.marginIssue {
+  margin: 20px 0px;
+  .btnContainerSocial {
+    width: 100%;
+    max-width: 340px;
+    @include justifyBtwn();
+    flex-direction: row;
+    button {
+      height: 100%;
+      border-width: 0px !important;
+      outline-width: 0px !important;
+      box-shadow: none !important;
+      font-size: 1.5rem;
+      color: $whitecolor;
+      background-color: transparent;
+      @include allCenter();
+    }
+  }
+}
+.taxNumberTxt {
+  font-size: 0.875rem;
+  color: $whitecolor;
+  margin-left: 10px;
+}
+.mycustomNavFootr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  text-decoration: none !important;
+  color: $whitecolor;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.apptxtStyle {
+  color: $whitecolor;
+  font-size: 1.2rem;
+}
+.headingSpan {
+  color: $whitecolor;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.copyrightdivtxt {
+  width: 100%;
+  @include allCenter();
+  color: $whitecolor;
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .widthissue {
+    width: 100% !important;
+  }
+  .manageHeightIssue {
+    min-height: 300px;
+  }
+  .mycustomNavFootr,
+  .headingSpan {
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .marginIssue {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .copyrightdivtxt {
+    margin-bottom: 20px;
+  }
+}

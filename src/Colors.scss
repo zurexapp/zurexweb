@@ -1,0 +1,53 @@
+$redcolor: #8c1726;
+$maincolor: #003978;
+$whitecolor: #ffffff;
+@mixin justifyStart() {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@mixin alignStart() {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+@mixin justifyEnd() {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@mixin allCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin justifyBtwn() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin justifyArnd() {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@mixin justifyEvn() {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-evenly !important;
+}
+@mixin gridSystem($grid) {
+  display: grid;
+  grid-template-columns: repeat($grid, 1fr);
+  gap: 15px;
+  width: 100%;
+}
+@mixin fontSizeP($num) {
+  font-size: calc(20px + $num);
+}
+@mixin widthP($num) {
+  width: calc(20px + $num);
+}
+@mixin heightP($num) {
+  height: calc(20px + $num);
+}

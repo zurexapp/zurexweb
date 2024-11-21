@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "aczurex-d4b61"
+  },
+  "targets": {
+    "aczurex-d4b61": {
+      "hosting": {
+        "zurex-web": [
+          "zurex-web"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

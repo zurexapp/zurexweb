@@ -1,0 +1,1471 @@
+@import "./Colors.scss";
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+.slick-slide {
+  &.slick-cloned {
+    display: none !important;
+  }
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.tipsContainerDivCard {
+  width: 100%;
+  max-width: 480px;
+  min-height: 290px;
+  height: 100%;
+  background-color: $whitecolor;
+  border-radius: 10px;
+  box-shadow: -1px 2px 9px 1px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  @include allCenter();
+  justify-content: flex-start;
+  flex-direction: column;
+  cursor: pointer;
+  span {
+    width: 95%;
+    color: $redcolor;
+    min-height: 60px;
+    height: auto;
+    margin-bottom: 0.75rem;
+    font-size: 1.213rem;
+    font-weight: bold;
+  }
+  img {
+    width: 95%;
+    object-fit: cover;
+    height: 200px;
+    margin: 0.75rem auto;
+    border-radius: 10px;
+  }
+}
+.topLogoPagediv {
+  width: 100%;
+  object-fit: contain;
+  height: 5.438rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+.tipDescription {
+  img {
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+  }
+  h1 {
+    color: $maincolor;
+    font-size: 1.938rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  .descriptionPara {
+    font-size: 1.813rem;
+    line-height: 4.438rem;
+  }
+  .reasonHeading,
+  .descriptionHeading {
+    font-size: 1.813rem;
+    line-height: 2.5rem;
+    color: $redcolor;
+    font-weight: bold;
+  }
+  .reasonHeading {
+    color: $maincolor !important;
+  }
+  .resonBulletPoints {
+    font-size: 1.813rem;
+    line-height: 2.5rem;
+    margin: 3rem 0px;
+  }
+  .reasonPara {
+    font-size: 1.813rem;
+    line-height: 2.5rem;
+  }
+}
+.addressPage {
+  .legendContainer {
+    .d-flex {
+      width: 100%;
+      button {
+        width: 100%;
+        max-width: 120px;
+        height: 2.5rem;
+        font-size: 1.313rem;
+
+        color: $whitecolor;
+        border-radius: 10px;
+        margin: 0 auto;
+        &:last-child {
+          background-color: $maincolor;
+          border: 1px solid $maincolor;
+        }
+        &:first-child {
+          background-color: $redcolor;
+          border: 1px solid $redcolor;
+        }
+      }
+    }
+  }
+}
+.walletPage {
+  .useraImageContaner {
+    margin: 2rem auto;
+    margin-bottom: 1rem;
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 18.75rem;
+    overflow: hidden;
+    @include allCenter();
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .usernamePara {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .walletCardDiv {
+    width: 100%;
+    max-width: 480px;
+    @include allCenter();
+    flex-direction: column;
+    min-height: 248px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0px auto;
+    img {
+      width: 100%;
+      object-fit: contain;
+      height: 100px;
+    }
+    p {
+      font-size: 1.213rem;
+      line-height: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      color: black;
+      margin: 0.6rem 0px;
+    }
+    .priceTxt {
+      color: $maincolor;
+      margin: 0px auto;
+    }
+  }
+}
+.aboutPage {
+  margin-bottom: 3.5rem;
+  .reasonPara {
+    font-size: 1.813rem;
+    line-height: 3.125rems;
+    margin-bottom: 1.5rem;
+  }
+  .reasonHeading {
+    font-size: 1.813rem;
+    line-height: 2.5rems;
+    color: $redcolor;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+  }
+}
+.helpPage {
+  margin-bottom: 3.5rem;
+  .reasonPara {
+    font-size: 1.813rem;
+    line-height: 3.125rems;
+    margin-bottom: 1.5rem;
+  }
+  .reasonHeading {
+    font-size: 1.813rem;
+    line-height: 2.5rems;
+    color: $maincolor;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+  }
+}
+.contactUsPage {
+  margin: 5rem auto;
+  .pageHeading {
+    text-align: left;
+    font-size: 1.813rem;
+    line-height: 2.5rem;
+    color: $redcolor;
+    font-weight: bold;
+  }
+  input {
+    height: 66px;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 1px solid $maincolor;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    outline: none !important;
+    font-size: 1.5rem;
+  }
+  textarea {
+    height: 260px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid $maincolor;
+    padding: 1rem 1rem;
+    outline: none !important;
+    font-size: 1.5rem;
+  }
+  button {
+    width: 100%;
+    max-width: 210px;
+    height: 60px;
+    font-size: 1.438rem;
+    font-weight: bold;
+    border-radius: 10px;
+    &.lastBtn {
+      background-color: $redcolor;
+      color: $whitecolor;
+      border: 1px solid $whitecolor;
+    }
+  }
+}
+.cartPage {
+  margin-bottom: 6rem !important;
+  .emptyCart {
+    width: 100%;
+    height: 60vh;
+    @include allCenter();
+    flex-direction: column;
+    .cartImage {
+      width: 100%;
+      max-width: 250px;
+      object-fit: contain;
+    }
+    p {
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 3.75rem;
+      margin: 2rem auto;
+    }
+    button {
+      width: 100%;
+      max-width: 210px;
+      height: 60px;
+      font-size: 1.438rem;
+      font-weight: bold;
+
+      &.lastBtn {
+        background-color: $redcolor;
+        color: $whitecolor;
+        border: 1px solid $whitecolor;
+      }
+    }
+  }
+  .smallPriceContainer {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    p {
+      font-size: 1.1rem;
+      color: $redcolor;
+    }
+  }
+  .btnContainersBotm {
+    width: 100%;
+    max-width: 560px;
+    margin: 0px auto;
+    @include allCenter();
+    flex-direction: row;
+    button {
+      width: 100%;
+      max-width: 210px;
+      height: 60px;
+      font-size: 1.438rem;
+      font-weight: bold;
+      &.firstBtn {
+        border: 1px solid $redcolor;
+        background-color: $whitecolor;
+        color: $redcolor;
+      }
+      &.lastBtn {
+        background-color: $redcolor;
+        color: $whitecolor;
+        border: 1px solid $whitecolor;
+      }
+    }
+  }
+  .pageHeading {
+    text-align: left;
+    font-size: 1.813rem;
+    line-height: 2.5rem;
+    color: $redcolor;
+    font-weight: bold;
+  }
+  .cartCardContainer {
+    width: 100%;
+    height: 120px;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+    .otherInfoContainer {
+      height: 100%;
+      flex-grow: 1;
+      margin-left: 0.5rem;
+      @include allCenter();
+      flex-direction: column;
+      p {
+        width: 100%;
+        text-align: left;
+        font-size: 1.563rem;
+        line-height: 2.5rem;
+        color: black;
+      }
+      .lowerSideContainer {
+        width: 100%;
+        @include justifyBtwn();
+        flex-direction: row;
+        margin-top: 0.1rem;
+        p {
+          margin-bottom: 0px;
+          color: $maincolor;
+          font-size: 1.563rem;
+          line-height: 2.5rem;
+          text-align: left;
+        }
+        button {
+          height: 2rem;
+          width: 2rem;
+          @include allCenter;
+          color: $redcolor;
+          font-size: 1.875rem;
+          border: 0px !important;
+          outline: none !important;
+          box-shadow: none !important;
+          background: transparent;
+        }
+      }
+    }
+  }
+  .cartCardContainerNew {
+    width: 100%;
+    min-height: 120px;
+    height: 100%;
+    padding: 1rem;
+    border: 1px solid $maincolor;
+    border-radius: 15px;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+    .otherInfoContainer {
+      height: 100%;
+      flex-grow: 1;
+      margin-left: 0.5rem;
+      @include allCenter();
+      flex-direction: column;
+      width: 100%;
+      p {
+        width: 100%;
+        text-align: left;
+        font-size: 1.563rem;
+        line-height: 2.5rem;
+        color: black;
+        height: 5rem;
+      }
+      .lowerSideContainer {
+        width: 100%;
+        height: 2.5rem;
+        @include justifyBtwn();
+        flex-direction: row;
+        margin-top: 0.1rem;
+        .lowerPara {
+          margin-bottom: 0px;
+          color: $maincolor;
+          font-size: 1.563rem;
+          line-height: 2.5rem;
+          text-align: left;
+          height: auto !important;
+        }
+        button {
+          height: 2rem;
+          width: 2rem;
+          @include allCenter;
+          color: $redcolor;
+          font-size: 1.875rem;
+          border: 0px !important;
+          outline: none !important;
+          box-shadow: none !important;
+          background: transparent;
+        }
+      }
+      .addToCartBtn {
+        width: 100%;
+        background: $redcolor;
+        color: $whitecolor;
+        border: 0px !important;
+        outline: none !important;
+        box-shadow: none !important;
+        font-size: 1.563rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-weight: bold;
+        margin-top: 1rem;
+        border-radius: 10px;
+        svg {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+.modal-header {
+  border: 0px !important;
+}
+.modal-dialog {
+  max-width: 750px !important;
+}
+.custbutton {
+  background-color: transparent !important;
+  border: 0px !important;
+  outline: none !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+.borderedDiv {
+  width: 100%;
+  max-width: 450px;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  margin: 0px auto;
+  @include allCenter();
+  flex-direction: column;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  img {
+    height: 40px;
+    object-fit: contain;
+    &:last-child {
+      margin-top: 1rem;
+    }
+  }
+}
+.hompage {
+  .modal-body {
+    .modalBtnContainers {
+      margin-top: 7rem;
+      width: 100%;
+      max-width: 1120px;
+      min-height: 70px;
+      background-color: $whitecolor;
+      // .borderedDiv {
+      //   width: 100%;
+      //   padding: 2rem 1rem;
+      //   @include allCenter();
+      //   flex-direction: column;
+      //   border: 1px solid black;
+      //   img {
+      //     height: 60px;
+      //     object-fit: contain;
+      //     &:last-child {
+      //       margin-top: 4rem;
+      //     }
+      //   }
+      // }
+    }
+  }
+
+  .nextBtnDiv {
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 3rem;
+
+    button {
+      width: 100%;
+      max-width: 140px;
+      font-size: 1.813rem;
+      color: $whitecolor;
+      background-color: $redcolor;
+      border: 0px !important;
+      outline: none !important;
+      box-shadow: none !important;
+      line-height: 3rem;
+      border-radius: 10px;
+    }
+  }
+  .SupportContainer {
+    margin: 3rem auto;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    @include allCenter();
+    flex-direction: row;
+    .cartCardContainerNew1 {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid $maincolor;
+      border-radius: 15px;
+      cursor: pointer;
+      .imagContainer {
+        width: 100%;
+        height: 150px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .otherInfoContainer {
+        height: 5rem;
+        width: 100%;
+        flex: 1;
+        @include allCenter();
+        flex-direction: column;
+        p {
+          width: 100%;
+          text-align: left;
+          // font-size: 1.563rem;
+          // line-height: 2.5rem;
+          color: black;
+          height: 5rem;
+        }
+      }
+    }
+  }
+
+  .cartCardContainerNew {
+    width: 100%;
+    min-height: 120px;
+    height: 100%;
+    padding: 1rem;
+    border: 1px solid $maincolor;
+    border-radius: 15px;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 250px;
+      margin-bottom: 1rem;
+    }
+    .otherInfoContainer {
+      height: 100%;
+      width: 100%;
+      flex-grow: 1;
+      margin-left: 0.5rem;
+      @include allCenter();
+      flex-direction: column;
+      p {
+        width: 100%;
+        text-align: left;
+        font-size: 1.563rem;
+        line-height: 2.5rem;
+        color: black;
+        height: 5rem;
+      }
+      .lowerSideContainer {
+        width: 100%;
+        height: 2.5rem;
+        @include justifyBtwn();
+        flex-direction: row;
+        margin-top: 0.1rem;
+        .lowerPara {
+          margin-bottom: 0px;
+          color: $maincolor;
+          font-size: 1.563rem;
+          line-height: 2.5rem;
+          text-align: left;
+          height: auto !important;
+        }
+        button {
+          height: 2rem;
+          width: 2rem;
+          @include allCenter;
+          color: $redcolor;
+          font-size: 1.875rem;
+          border: 0px !important;
+          outline: none !important;
+          box-shadow: none !important;
+          background: transparent;
+        }
+      }
+      .addToCartBtn {
+        width: 100%;
+        background: $redcolor;
+        color: $whitecolor;
+        border: 0px !important;
+        outline: none !important;
+        box-shadow: none !important;
+        font-size: 1.563rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-weight: bold;
+        margin-top: 1rem;
+        border-radius: 10px;
+        svg {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  .slick-dots {
+    li {
+      &.slick-active {
+        button {
+          border-radius: 20px;
+          @include allCenter();
+          &::before {
+            color: $redcolor;
+            font-size: 0.9rem;
+          }
+        }
+      }
+      button {
+        border-radius: 20px;
+        @include allCenter();
+        &::before {
+          color: $redcolor;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  .homeBtnMain {
+    font-size: 1.813rem;
+    line-height: 2.5rem;
+    background-color: $maincolor;
+    color: $whitecolor;
+    border: 0px !important;
+    outline: none !important;
+    box-shadow: none !important;
+    &:hover {
+      background-color: $maincolor !important;
+      color: $whitecolor !important;
+    }
+  }
+  .homeBtnSec {
+    font-size: 1.813rem;
+    line-height: 2.5rem;
+    background-color: $redcolor;
+    color: $whitecolor;
+    border: 0px !important;
+    outline: none !important;
+    box-shadow: none !important;
+    &:hover {
+      background-color: $redcolor !important;
+      color: $whitecolor !important;
+    }
+  }
+  .crouselCustomClass {
+    .carousel-indicators {
+      margin-left: 5% !important;
+      margin-right: 0px !important;
+      justify-content: flex-start !important;
+      margin-bottom: 1.5rem;
+      button {
+        width: 15px !important;
+        height: 15px !important;
+        border-radius: 35px !important;
+        overflow: hidden;
+        border: 0.5px solid rgba(0, 0, 0, 0.5);
+        background-color: rgba(255, 255, 255, 0.9) !important;
+        &.active {
+          background-color: black !important;
+        }
+      }
+    }
+  }
+  .headingPara {
+    width: 100%;
+    text-align: left;
+    font-size: 1.813rem;
+    line-height: 2.5rem;
+    color: $maincolor;
+    font-weight: bold;
+    .smallNav {
+      color: $redcolor;
+    }
+  }
+  .custom25MarginBottom {
+    margin-bottom: 2.5rem;
+  }
+  .productBtnSelctr {
+    width: 95%;
+    min-height: 8.5rem;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 10px;
+    @include allCenter();
+    flex-direction: column;
+    color: $whitecolor;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    h3 {
+      font-size: 1.813rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+
+  // .upperHead {
+  //   position: absolute;
+  //   top: -18px;
+  //   width: 70%;
+  //   height: 25px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   background-color: $redcolor;
+  //   border-radius: 10px;
+  //   &.activeBg {
+  //     background-color: $maincolor !important;
+  //   }
+  // }
+  .reviewCard {
+    width: 95% !important;
+    display: flex !important;
+    max-width: 490px;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: $whitecolor;
+    height: 320px;
+    margin: 10px auto;
+    overflow: hidden;
+    @include justifyEvn();
+    flex-direction: column;
+    h3 {
+      font-size: 1.5rem;
+      color: $maincolor;
+      font-weight: bold;
+    }
+    p {
+      font-size: 0.85rem;
+      text-align: center;
+      width: 92%;
+    }
+    .userAvtar {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 10rem;
+      border: 0px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 5rem;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.paymentPage {
+  .pageHeading {
+    text-align: left;
+    font-size: 1.813rem;
+    line-height: 2.5rem;
+    color: $redcolor;
+    font-weight: bold;
+  }
+  .paynextBtn {
+    width: 100%;
+    max-width: 210px;
+    height: 60px;
+    font-size: 1.438rem;
+    font-weight: bold;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: $maincolor;
+    color: $whitecolor;
+    border-radius: 10px;
+  }
+  .inputsPayContainer {
+    width: 100%;
+    max-width: 450px;
+    input {
+      height: 60px;
+      width: 95%;
+      margin: 1rem auto;
+      font-size: 1.438rem;
+      padding-left: 10px;
+      padding-right: 10px;
+      border: 1px solid $maincolor;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+  .paymentCardImagContainer {
+    width: 100%;
+    max-width: 320px;
+    margin: 10px auto;
+    height: 170px;
+    background-color: $whitecolor;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    @include allCenter();
+    flex-direction: column;
+    cursor: pointer;
+    img {
+      height: 80px;
+      object-fit: contain;
+    }
+  }
+}
+.errorPage {
+  height: 70vh;
+  @include allCenter();
+  flex-direction: column;
+  img {
+    width: 150px;
+    object-fit: contain;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin: 1rem auto;
+    text-align: center;
+    width: 95%;
+    color: $redcolor;
+  }
+  button {
+    width: 100%;
+    max-width: 150px;
+    background-color: $maincolor;
+    border: 0px !important;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 1.5rem;
+    line-height: 3.2rem;
+    color: $whitecolor;
+    border-radius: 10px;
+  }
+}
+.successPage {
+  height: 70vh;
+  @include allCenter();
+  flex-direction: column;
+  img {
+    width: 150px;
+    object-fit: contain;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin: 1rem auto;
+    text-align: center;
+    width: 95%;
+  }
+  button {
+    width: 100%;
+    max-width: 150px;
+    background-color: $redcolor;
+    border: 0px !important;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 1.5rem;
+    line-height: 3.2rem;
+    color: $whitecolor;
+    border-radius: 10px;
+  }
+}
+.loginPage {
+  .legendContainer {
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 750px;
+    margin: 10px auto;
+    position: relative;
+    padding: 1rem 2rem;
+    @include allCenter();
+    flex-direction: column;
+    margin-bottom: 6rem;
+    .legendTitle {
+      background-color: $whitecolor;
+      padding: 0px 0.7rem;
+      font-weight: bold;
+      color: $redcolor;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      position: absolute;
+      top: -1.6rem;
+      left: 0.5rem;
+    }
+    .welcomeTxt {
+      text-align: center;
+      font-size: 1.813rem;
+      line-height: 2.5rem;
+      color: black;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      margin-top: 0.8rem;
+    }
+    .loginFirstTxt {
+      font-size: 1.313rem;
+      line-height: 2.5rem;
+      text-align: left;
+      color: black;
+      width: 100%;
+    }
+    button {
+      width: 100%;
+      max-width: 120px;
+      height: 2.5rem;
+      font-size: 1.313rem;
+      background-color: $maincolor;
+      border: 1px solid $maincolor;
+      color: $whitecolor;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type="number"] {
+      -moz-appearance: textfield;
+      appearance: textfield;
+    }
+    .loginInputDiv {
+      width: 100%;
+      height: 60px;
+      @include allCenter();
+      flex-direction: row;
+      border: 1px solid $maincolor;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      .timeContainer {
+        width: auto;
+        min-width: 120px;
+        padding: 10px 20px;
+        background-color: white;
+        border-radius: 7px;
+        box-shadow: -1px 3px 3px 0px rgba(0, 0, 0, 0.64);
+        margin-bottom: 10px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &.borderView {
+          border: 1px solid $maincolor !important;
+          color: white !important;
+          background-color: $maincolor !important;
+        }
+      }
+      svg {
+        height: 2rem;
+        width: 2rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+      span {
+        height: 60px;
+        line-height: 60px;
+        width: calc(100% - 4rem);
+        padding: 0 0.7rem;
+        font-size: 1.2rem;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      div {
+        width: 100%;
+        height: 100%;
+        .autocomplete-dropdown-container {
+          z-index: 4000;
+        }
+        input {
+          height: 100%;
+          width: calc(100% - 4rem);
+          border: 0px !important;
+          outline: none !important;
+          box-shadow: none !important;
+          padding: 0 0.7rem;
+          font-size: 1.2rem;
+        }
+      }
+      input {
+        height: 100%;
+        width: calc(100% - 4rem);
+        border: 0px !important;
+        outline: none !important;
+        box-shadow: none !important;
+        padding: 0 0.7rem;
+        font-size: 1.2rem;
+      }
+      .sideContainer {
+        width: 4rem;
+        height: 100%;
+        @include allCenter();
+        color: black;
+        font-size: 1.2rem;
+      }
+    }
+    .loginInputDivNew {
+      width: 100%;
+      min-height: 60px;
+      @include allCenter();
+      flex-direction: row;
+      overflow: hidden;
+      margin-bottom: 1rem;
+
+      div {
+        width: 100%;
+        height: 100%;
+        .autocomplete-dropdown-container {
+          z-index: 4000;
+          .suggestion-item--active {
+            width: 100%;
+            min-height: 30px;
+            margin-bottom: 10px;
+            background-color: lightgrey !important;
+          }
+          .suggestion-item {
+            width: 100%;
+            min-height: 30px;
+            margin-bottom: 10px;
+            background-color: white !important;
+            &:first-child {
+              margin-top: 15px;
+            }
+            &:last-child {
+              margin-top: 0px !important;
+            }
+          }
+        }
+        input {
+          width: 100%;
+          height: 60px;
+          @include allCenter();
+          flex-direction: row;
+          border: 1px solid $maincolor !important;
+          border-radius: 10px;
+          overflow: hidden;
+          outline: none !important;
+          box-shadow: none !important;
+          padding: 0 0.7rem;
+          font-size: 1.2rem;
+        }
+      }
+      input {
+        height: 100%;
+        width: calc(100% - 4rem);
+        border: 0px !important;
+        outline: none !important;
+        box-shadow: none !important;
+        padding: 0 0.7rem;
+        font-size: 1.2rem;
+      }
+      .sideContainer {
+        width: 4rem;
+        height: 100%;
+        @include allCenter();
+        color: black;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+.productDescriptionPage {
+  .productHeaderDiv {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    @include allCenter;
+    flex-direction: row;
+    .priceContainer {
+      height: 6.9rem;
+      width: 25%;
+      @include allCenter();
+      align-items: flex-end;
+      flex-direction: column;
+      font-size: 1.313rem;
+      color: $maincolor;
+      font-weight: bold;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+    .infoContainer {
+      height: 100%;
+      width: 75%;
+      @include allCenter();
+      flex-direction: column;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+      .ratingDiv {
+        width: 100%;
+        font-size: 1.25rem;
+        color: $maincolor;
+      }
+      h5 {
+        width: 100%;
+        text-align: left;
+        line-height: 2.5rem;
+        font-size: 1.313rem;
+        margin: 0px;
+      }
+      p {
+        width: 100%;
+        text-align: left;
+        font-size: 1.188rem;
+        line-height: 2.5rem;
+        margin: 0px;
+      }
+    }
+  }
+  .productMoreInfoDiv {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border: 1px solid #777777;
+    border-radius: 10px;
+    ul {
+      li {
+        width: 100%;
+        font-size: 1.188rem;
+        line-height: 2.5rem;
+      }
+    }
+    .lowerRedPara {
+      line-height: 2.5rem;
+      font-size: 0.938rem;
+      text-align: left;
+      color: $redcolor;
+    }
+  }
+  .PriceCalct {
+    line-height: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: $maincolor;
+  }
+  .inlineBtnRow {
+    width: 100%;
+    font-size: 1.563rem;
+    line-height: 2.5rem;
+
+    button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      border: 0px !important;
+      outline: none !important;
+      box-shadow: none !important;
+      margin: 0px 1rem;
+      background-color: $redcolor;
+      @include allCenter();
+      font-size: 25px;
+      color: $whitecolor;
+    }
+  }
+  .button {
+    width: 100%;
+    max-width: 250px;
+    min-height: 60px;
+    font-size: 1.438rem;
+    font-weight: bold;
+    svg {
+      font-size: 2rem;
+    }
+    &.lastBtn {
+      border: 1px solid $redcolor;
+      background-color: $whitecolor;
+      color: $redcolor;
+    }
+    &.firstBtn {
+      background-color: $redcolor;
+      color: $whitecolor;
+      border: 1px solid $whitecolor;
+    }
+  }
+  .ProductSharingDiv {
+    width: 100%;
+    max-width: 340px;
+    height: 7rem;
+    padding: 1rem 2rem;
+    border: 0.5px solid #777777;
+    border-radius: 10px;
+    @include allCenter();
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    p {
+      font-size: 1.313rem;
+      line-height: 2.5rem;
+      margin-bottom: 0.7rem;
+    }
+    .btnContainerSocial {
+      width: 100%;
+      max-width: 240px;
+      @include justifyBtwn();
+      flex-direction: row;
+      button {
+        height: 100%;
+        border-width: 0px !important;
+        outline-width: 0px !important;
+        box-shadow: none !important;
+        font-size: 1.5rem;
+        color: $maincolor;
+        background-color: transparent;
+        @include allCenter();
+      }
+    }
+  }
+  .crouselImg {
+    width: 100%;
+    min-height: 350px;
+    max-height: 530px;
+    img {
+      width: 100%;
+      height: 90%;
+      object-fit: contain;
+    }
+  }
+  .crouselCustomClassNew {
+    .carousel-indicators {
+      // margin-left: 5% !important;
+      // margin-right: 0px !important;
+      margin-bottom: 1.5rem;
+      bottom: -3.5rem !important;
+      button {
+        width: 8px !important;
+        height: 8px !important;
+        border-radius: 35px !important;
+        overflow: hidden;
+        border: 0.5px solid rgba(0, 0, 0, 0.5);
+        background-color: rgba(255, 255, 255, 0.9) !important;
+        &.active {
+          background-color: #777777 !important;
+        }
+      }
+    }
+  }
+}
+.homeBtnMainDivWala {
+  font-size: 1.813rem !important;
+  line-height: 2.5rem !important;
+  background-color: $maincolor !important;
+  color: $whitecolor !important;
+  border: 0px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  &:hover {
+    background-color: $maincolor !important;
+    color: $whitecolor !important;
+  }
+}
+.enterCarData {
+  max-width: 610px !important;
+  @include allCenter();
+  flex-direction: column;
+  img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 3rem;
+  }
+
+  input,
+  select {
+    height: 66px;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 1px solid $maincolor;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    outline: none !important;
+    font-size: 1.5rem;
+  }
+  button {
+    width: 100%;
+    max-width: 210px;
+    height: 60px;
+    font-size: 1.438rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    &.lastBtn {
+      background-color: $redcolor;
+      color: $whitecolor;
+      border: 1px solid $whitecolor;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .cartPage {
+    .cartCardContainer {
+      height: auto !important;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .loginPage {
+    .legendContainer {
+      .legendTitle {
+        font-size: 1rem;
+      }
+    }
+  }
+  .addressPage {
+    .legendContainer {
+      .d-flex {
+        button {
+          font-size: 1.1rem;
+          max-width: 87px;
+        }
+      }
+    }
+  }
+}
+input::placeholder {
+  color: #8e8e8e;
+}
+.customLogoutBtn {
+  width: auto;
+  padding: 1rem 2rem;
+  @include allCenter;
+  color: $redcolor;
+  font-size: 1.875rem;
+  border: 0px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent;
+}
+
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: relative;
+
+  .card-body {
+    padding: 20px;
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.card.selected {
+  background-color: #8E9FD3; /* Example red color for selected card */
+}
+
+
+  .delete-button-container {
+    position: absolute;
+    top: 15px; /* Adjust the top positioning as needed */
+    right: 20px; /* Adjust the right positioning as needed */
+  }
+
+  .delete-button {
+    width: 25px; /* Set width of the delete button */
+    height: 25px; /* Set height of the delete button */
+    cursor: pointer; /* Ensure cursor changes on hover */
+  }
+  /* src/components/TopBar/TopBar.scss */
+
+// .iconButtonCustom {
+//   background: none;
+//   border: none;
+//   padding: 5px;
+//   margin: 0 5px;
+//   // font-size: 1.2rem;
+//   font-size: 22px !important;
+
+//   cursor: pointer;
+//   transition: all 0.3s ease;
+
+//   &:hover {
+//     color:  $redcolor; /* Change this to your preferred hover color */
+//   }
+// }
+
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+
+
+

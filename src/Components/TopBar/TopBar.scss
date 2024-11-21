@@ -1,0 +1,38 @@
+@import "../../Colors.scss";
+.customColorTopBarBg {
+  background-color: $whitecolor !important;
+}
+.navbar > .container {
+  justify-content: flex-start !important;
+}
+.customTogleBtn {
+  border-width: 0px !important;
+  outline-width: 0px !important;
+  margin-right: 20px;
+  box-shadow: none !important;
+}
+a.activeColor {
+  color: $redcolor !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+  font-weight: 1.5rem !important;
+  height: 100%;
+}
+a.inActiveColor {
+  color: black !important;
+  text-decoration: none !important;
+  font-weight: 1.5rem !important;
+  height: 100%;
+}
+.iconButtonCustom {
+  padding: 1vh 0.5vw;
+  border-width: 0px !important;
+  outline: 0px !important;
+  background-color: transparent;
+  box-shadow: none !important;
+  font-size: 1.688rem;
+  height: 100%;
+  &:nth-child(2) {
+    margin: 0px 10px;
+  }
+}
